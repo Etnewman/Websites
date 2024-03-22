@@ -1,0 +1,39 @@
+<!-- ExpensesTracker/templates/ExpensesTracker/home.html -->
+{% extends 'ExpensesTracker/base.html' %}
+
+{% load static %}
+
+{% block title %}Home - Expensive, an online financial tracker.{% endblock %}
+
+{% block header %}Home{% endblock %}
+
+{% block content %}
+    <link rel="stylesheet" href="{% static 'ExpensesTracker/css/signup.css' %}">
+
+    <div class="signup-container">
+        <div class="signup-box">
+            <h2>Signup</h2>
+            {% if messages %}
+                <ul class="messages">
+                    {% for message in messages %}
+                        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+
+            <form class="signup-form" method="post" action="{% url 'signup' %}">
+                {% csrf_token %}
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,31 @@
+<!-- ExpensesTracker/templates/ExpensesTracker/login.html -->
+{% extends 'ExpensesTracker/base.html' %}
+
+{% block title %}Login - Expensive, an online financial tracker.{% endblock %}
+
+{% block header %}Login{% endblock %}
+
+{% load static %}
+
+{% block content %}
+    <link rel="stylesheet" href="{% static 'ExpensesTracker/css/login.css' %}"> 
+
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Login</h2>
+            <form method="post" action="{% url 'login' %}" class="login-form">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="id_username">Username:</label>
+                    {{ form.username }}
+                </div>
+                <div class="form-group">
+                    <label for="id_password">Password:</label>
+                    {{ form.password }}
+                </div>
+                <button type="submit" class="btn-login">Login</button>
+            </form>
+            <p>Don't have an account? <a href="{% url 'signup' %}">Sign up here</a>.</p>
+        </div>
+    </div>
+{% endblock %}

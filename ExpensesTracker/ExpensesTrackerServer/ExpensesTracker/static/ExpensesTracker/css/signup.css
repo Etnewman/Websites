@@ -1,0 +1,71 @@
+/* ExpensesTracker/static/ExpensesTracker/css/signup.css */
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.signup-container {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 100px;
+}
+
+.signup-box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height:auto;
+    width: 500px;
+    text-align: center;
+}
+
+.signup-form {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555555;
+    text-align: left;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+h2 {
+    color: #333333;
+    padding-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #333333;
+}

@@ -1,0 +1,179 @@
+h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    padding-left: 5%;
+    color: purple;
+    background-color: gold;
+    border: 2px solid black;
+}
+
+img.me {
+    width: 150px;
+    border-radius: 75px;
+    border: 2px solid black;
+    padding: 10px;
+    padding-block: 15px 15px;
+    background-color:purple;
+    float: left;
+
+}
+
+img:hover {
+    box-shadow: 0 0 1px 2px;
+}
+
+img.ttu {
+    width: 10%;
+    margin-left: 10%;
+    padding: 5%;
+    border-radius: 50%;
+}
+
+img.ttu2 {
+    width: 10%;
+    float: inline-end;
+    padding: 5%;
+    border-radius: 50%;
+}
+
+img.ttu3 {
+    width: 10%;
+    padding: 5%;
+    border-radius: 50%;
+    align-content: center;
+    margin-left: 16.5%;
+}
+
+img.pikapp {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    border-radius: 25%;
+    display: block;
+    background-color: white;
+    
+}
+
+.p1 {
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    left: 20px;
+}
+
+.p2 {
+    text-align: left;
+    font-size: 15px;
+    text-align: left;
+    position: relative;
+    left: 20px;
+}
+
+.classes-major {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.classes-year {
+    font-size: 20px;
+    background-color: gold;
+    margin-top: 0%;
+}
+
+.classes-season {
+    font-size: 15px;
+    border: 5px solid gold;
+    text-align: center;
+    margin: 0%;
+}
+
+
+.classes-course {
+    font-size: 15px;
+    border: 5px solid gold;
+    text-align: center;
+    margin: 0%;
+
+}
+
+.classes-number {
+    font-size: 15px;
+    border: 5px solid gold;
+    text-align: center;
+    width: auto;
+    margin: 0%;
+
+}
+
+.PKP {
+    font-size: 15px;
+    color: white;
+}
+
+.White-P {
+    font-size: 8px;
+    color: white;
+}
+
+.Main-Div {
+    align-self: left;
+    margin-left: 200px;
+    border: 5px outset purple;
+    background-color: gold;
+    text-align: center;
+}
+
+.Classes-Div {
+    align-self: center;
+    background-color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.Courses-Div {
+    float: left;
+    width: 85%;
+    margin: none;
+    padding: none;
+}
+
+.Number-Div {
+    float: left;
+    width: 15%;
+    margin: none;
+}
+
+.Year-Div {
+    align-self: center;
+    padding: none;
+    background-color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.Year-Container {
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 0%;
+    padding: none;
+}
+
+.Season-Div {
+    float: left;
+    width: 50%;
+    margin-top: -20px; 
+}
+
+.Side-Div {
+    float: left;
+    border: 2px solid black;
+    padding: 2%;
+    margin-top: -800px;
+    width: 110px;
+    border-radius: 75px;
+    align-content: center;
+    background-color: blue;
+}

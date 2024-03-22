@@ -1,0 +1,51 @@
+<!-- ExpensesTracker/templates/ExpensesTracker/home.html -->
+
+{% extends 'ExpensesTracker/base.html' %}
+
+{% block title %}Expenses - Expensive, an online financial tracker.{% endblock %}
+
+{% block header %}Expenses{% endblock %}
+
+{% load static %}
+
+{% block content %}
+    <link rel="stylesheet" href="{% static 'ExpensesTracker/css/expenses.css' %}">
+
+    <div class="body-expenses">
+        <div class="container-expenses">
+            <h1>Expense Tracker</h1>
+
+            <form id="expenseForm" method="post" action="{% url 'save_expense' %}">
+                {% csrf_token %}
+
+            <form id="expenseForm">
+                <label for="expenseName">Expense Name:</label>
+                <input type="text" id="expenseName" required>
+
+                <label for="expenseAmount">Amount:</label>
+                <input type="text" id="expenseAmount" required pattern="^\d+(\.\d{1,2})?$">
+
+                <button type="button" onclick="addExpense()">Add Expense</button>
+            </form>
+
+            <h2>Expense List</h2>
+            <table id="expenseTable">
+                <thead>
+                    <tr>
+                        <th>Expense Name</th>
+                        <th>Amount</th>
+                        <th>Action</th>
+                        <th>Running Total</th>
+                    </tr>
+                </thead>
+                <tbody id="expenseList"></tbody>
+            </table>
+
+            <p id="runningTotal">Running Total: $0.00</p>
+            <button type="button" id="saveButton">Save Expenses</button>
+        </div>
+    </div>
+
+    <script src="{% static 'ExpensesTracker\js\expense-tracker.js' %}"></script>
+    {% endblock %}
+    
